@@ -119,19 +119,19 @@
                                 <span class="new">{{prod.condition}}</span>
                             </span>
                             <div class="thumb">
-                                <a href="single-product.html" class="image">
+                                <a href="/products/{{prod.id}}" class="image">
                                     <img src="{{prod.image}}" alt="Product" / style="height:250px;width:250px">
                                     <img class="hover-image" src="{{prod.image}}" alt="Product" style="height:250px;width:250px" />
                                 </a>
                             </div>
                             <div class="content">
                                 <br>
-                                <span class="category"><a href="#">{{prod.categories}}</a></span>
-                                <h5 class="title"><a href="single-product.html">{{prod.name |truncatewords:4}}
+                                <span class="category"><a href="/products/{{prod.id}}">{{prod.categories}}</a></span>
+                                <h5 class="title"><a href="/products/{{prod.id}}">{{prod.name |truncatewords:4}}
                                     </a>
                                 </h5>
                                 <span class="price">
-                                    <span class="new">${{prod.price}}</span>
+                                   <a href="/products/{{prod.id}}"> <span class="new">${{prod.price}}</span></a>
                                 </span>
                             </div>
                             <div class="actions">

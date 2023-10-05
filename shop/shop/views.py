@@ -92,3 +92,11 @@ def search(request):
     return render(request,'main/search.html',context)
 
 
+def product_details(request,id):
+    prod = Product.objects.filter(id=id).first()
+    context = { 
+               'prod':prod,
+               }
+    return render(request,'main/product_single.html',context)
+
+
