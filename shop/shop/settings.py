@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'products',
+    'ckeditor',
+    'cart',
 ]
+CART_SESSION_ID = 'cart'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -63,6 +66,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'cart.context_processor.cart_total_amount',
             ],
         },
     },
@@ -119,11 +123,26 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = '/static'
 STATICFILES_DIRS = [ 
-                    
                     os.path.join(BASE_DIR,'static')
-                    
-                    
                     ]
+
+RAZORPAY_KEY_ID = 'rzp_test_sn7Zpr8JkBUXKn'
+RAZORPAY_KEY_SECRET = 'StId4Hh07MX7uGiKtPvWufEG'
+
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'almasyaseen18@gmail.com'
+EMAIL_HOST_PASSWORD = 'fdlyetgkkimqfvnk'
+
+
+
+
+
+
+
+
 
 
 # Default primary key field type

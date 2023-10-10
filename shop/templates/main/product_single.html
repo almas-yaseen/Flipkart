@@ -55,7 +55,7 @@
                         </div>
                         <span class="read-review"><a class="reviews" href="#">(5 Customer Review)</a></span>
                     </div>
-                    <p class="mt-30px">Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmll tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mill veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exet commodo consequat. Duis aute irure dolor</p>
+                    <p class="mt-30px">{{prod.description |safe}} </p>
                     
                     <div class="pro-details-categories-info pro-details-same-style d-flex m-0">
                         <span>Categories: </span>
@@ -104,7 +104,7 @@
                         <div id="des-details2" class="tab-pane">
                             <div class="product-anotherinfo-wrapper text-start">
                                 <ul>
-                                    <li>{{prod.information}}</li>
+                                    <li>{{prod.information |safe}}</li>
                                     
                                 </ul>
                             </div>
@@ -112,7 +112,7 @@
                         <div id="des-details1" class="tab-pane active">
                             <div class="product-description-wrapper">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip efgx ea co consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cupidatat non proident, sunt in culpa qui
+                                    {{prod.description |safe}}
                                 </p>
                             </div>
                         </div>

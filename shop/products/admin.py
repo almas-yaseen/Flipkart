@@ -9,6 +9,15 @@ class TagTublerinline(admin.TabularInline):
 class ProductAdmin(admin.ModelAdmin):
     inlines = [ImagesTublerinline,TagTublerinline]
     
+class OrderItemTubulerinline(admin.TabularInline):
+    model = OrderItem
+    
+class OrderAdmin(admin.ModelAdmin):
+    inlines =[OrderItemTubulerinline]
+    
+    
+
+    
     
     
 
@@ -21,3 +30,6 @@ admin.site.register(Filter_price)
 admin.site.register(Product,ProductAdmin)
 admin.site.register(Images)
 admin.site.register(Tag)
+admin.site.register(Contact)
+admin.site.register(Order,OrderAdmin)
+admin.site.register(OrderItem)
